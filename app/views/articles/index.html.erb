@@ -1,6 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Articles</h1>
+<%= cl_image_tag("kzsg6bdggvszhlcpi08u",
+      width: 400, height: 300, crop: :fill) %>
+
+<%= cl_image_tag("ytn9js00chevmkwdac30",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
 
 <div id="articles">
   <% @articles.each do |article| %>
